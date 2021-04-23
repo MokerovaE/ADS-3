@@ -92,4 +92,3 @@ int eval(std::string pst) {
     }
   }
   return stack2.get();
-  

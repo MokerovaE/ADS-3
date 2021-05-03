@@ -1,11 +1,10 @@
 // Copyright 2021 NNTU-CS
 #include <string>
 #include "tstack.h"
+#include <stack>
 int priority(char a) {
-  if (a == '(')
-    return 0;
-  if (a == ')')
-    return 1;
+  if (a == '(') return 0;
+  if (a == ')') return 1;
   if ((a == '+') || (a == '-'))
     return 2;
   if ((a == '*') || (a == '/'))

@@ -55,7 +55,7 @@ std::string infx2pstfx(std::string inf) {
         stack1.pop();
     }
     str.erase(str.end() - 1, str.end());
-    return strpst;
+    return str;
 }
 int calculator(char ptr_a, int x, int y) {
   if (ptr_a == '+')

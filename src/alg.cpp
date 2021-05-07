@@ -1,7 +1,7 @@
 // Copyright 2021 NNTU-CS
 #include <string>
 #include "tstack.h"
-int priority(char a) {
+int priority(char a){
         if (a == '(')
                 return 0;
         else if (a == ')')

@@ -1,15 +1,16 @@
 // Copyright 2021 NNTU-CS
 #include <string>
 #include "tstack.h"
-int priority(char a) {
-        if (a == '(')
-                return 0;
-        else if (a == ')')
-                return 1;
-        else if ((a == '+') || (a == '-'))
-                return 2;
-        else
-                return 3;
+int priority(char ch) {
+switch (ch) {
+case '(': return 0;
+case ')': return 1;
+case '+': return 2;
+case '-': return 2;
+case '*': return 3;
+case '/': return 3;
+default: return -1;
+}
 }
 std::string infx2pstfx(std::string inf) {
   char head = 0;
